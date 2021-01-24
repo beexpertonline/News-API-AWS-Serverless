@@ -1,9 +1,9 @@
 module.exports = {
     logLevel: process.env.LOG_LEVEL || 'info',
     mongodb: {
-        uri: process.env.DB_URI || `mongodb+srv://beexpertdemo:beexpertdemo@cluster0.xwdzk.mongodb.net/news?retryWrites=true&w=majority `,
+        uri: process.env.DB_URI,
         db: process.env.DB_NAME || `news`,
-        option: { 
+        option: {
             useNewUrlParser: true,
             // useCreateIndex: true,
             // autoIndex: false,
