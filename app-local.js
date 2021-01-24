@@ -1,6 +1,11 @@
-const app = require('./app');
-//const logger = require('./helper/logger')
-const port = 4009
+const DBConnection = require('./models/mongoConnection');
 
-app.listen(port)
-console.log(`listening on http://localhost:${port}`)
+DBConnection.startConnectToDB()
+    .then(() => {
+        const app = require('./app');
+        const port = 4000
+        app.listen(port)
+        console.log(`listening on http://localhost:${port}`)
+    }).catch(err => {
+        console.log(`cannot connect to DB`, err)
+    })

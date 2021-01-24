@@ -1,3 +1,3 @@
-module.exports.user = require('./user');
+module.exports.news = require('./news');
 
 
