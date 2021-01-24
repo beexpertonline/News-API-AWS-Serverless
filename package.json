@@ -1,5 +1,5 @@
 {
-  "name": "aws-serverless",
+  "name": "new-api-aws-serverless",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,9 +8,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AhmTarik/aws-serverless.git"
+    "url": "git+https://github.com/beexpertonline/News-API-AWS-Serverless.git"
   },
-  "author": "",
+  "author": "BeExpert Online",
   "license": "ISC",
   "dependencies": {
     "aws-serverless-express": "^3.3.6",
