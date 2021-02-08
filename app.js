@@ -30,8 +30,9 @@ app.use(middleware.responceHeader);
 app.get('/', function (req, res) {
     try {
         logger.info('inside get');
-        res.Ok({
-        });
+        res.Ok(
+            "news api"
+        );
     } catch (error) {
         logger.error(`requestID ${req.requestId} error in /req`, error);
         return res.InternalServerError();
